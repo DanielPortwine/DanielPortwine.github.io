@@ -1,1 +1,136 @@
-Test
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="css/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
+    <style>
+        .bg-vue {
+            background-color: #4dba87;
+        }
+        .bg-vue:hover {
+            background-color: #40a576;
+        }
+        .bg-tailwind {
+            background-color: #38bdf8;
+        }
+        .bg-tailwind:hover {
+            background-color: #09aff6;
+        }
+        .bg-laravel {
+            background-color: #ff2d20;
+        }
+        .bg-laravel:hover {
+            background-color: #cc0a00;
+        }
+        .bg-jetstream {
+            background-color: #6875f5;
+        }
+        .bg-jetstream:hover {
+            background-color: #5767f4;
+        }
+        .slick-arrow {
+            z-index: 100;
+            text-shadow: black 2px 2px 10px;
+        }
+        .slick-prev {
+            left: 15px;
+        }
+        .slick-next {
+            right: 15px;
+        }
+    </style>
+</head>
+<body class="bg-gray-700 text-white">
+    <div class="flex justify-center items-center h-screen bg-black font-mono">
+        <div class="text-3xl font-bold mx-auto">
+            <div class="max-w-7xl">
+                <div class="rounded-lg">
+                    <img class="h-72 w-72 mx-auto object-cover rounded-full" src="media/DSC_0001-min.JPG">
+                </div>
+                <h1 class="text-7xl text-green-500 text-center">Daniel Portwine</h1>
+                <p class="text-green-500 text-center">Laravel Developer</p>
+            </div>
+        </div>
+        <div class="absolute bottom-6">
+            <i class="fa fa-angle-double-down text-green-500"></i>
+        </div>
+    </div>
+    <div class="bg-gray-600 p-6">
+        <div class="max-w-6xl mx-auto flex text-3xl">
+            <p class="flex-1">Get in touch</p>
+            <div class="flex flex-none gap-4">
+                <a href="https://twitter.com/DanielPortwine" class="text-blue-400 hover:text-blue-300"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:dan.portwine@protonmail.com" class="hover:text-gray-200"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-5xl text-center my-4">Projects</h1>
+        <!-- Start project card -->
+        <div class="md:m-6 mt-0 bg-gray-600 md:rounded-b-lg md:shadow-xl border-b md:border-none border-gray-300">
+            <div class="screenshots-slider">
+                <div class="">
+                    <a href="media/Social/SocialDemo.gif"><img src="media/Social/SocialDemo.gif"></a>
+                </div>
+                <div class="">
+                    <a href="media/Social/SocialLesson.png"><img src="media/Social/SocialLesson.png"></a>
+                </div>
+            </div>
+            <div class="p-4 md:p-6 pt-0 md:pt-0">
+                <div class="md:flex flex-wrap mb-4">
+                    <h1 class="text-3xl flex-1">Twitter-style Social Platform</h1>
+                    <a href="https://github.com/DanielPortwine/Social" class="flex-none text-blue-400 hover:text-blue-300">View on GitHub</a>
+                </div>
+                <p class="mb-12">
+                    I decided to learn Vue.js by building a simple single page social platform based on Twitter.<br><br>
+                    The basic concept is that users can register, login and then create posts. They can then comment on
+                    their own or other users' posts.<br><br>
+                    The lists of posts use infinite scroll for a better user experience.<br><br>
+                    Users can click on a user's name to see more information about that user as well as a list of
+                    that users' posts.<br><br>
+                    There is also a side tab that lists the most followed users.
+                </p>
+                <h3 class="text-xl mb-4">What I learned</h3>
+                <p class="mb-12">
+                    Building an app in a new framework, in this case Vue, is inevitably going to cause you to learn the
+                    basics. Things like components, props, events etc.<br><br>
+                    But one of the more specific lessons I learned was to use passed-down props rather than generating
+                    what I needed within the child component itself.<br><br>
+                    For example, I wanted to find out if the current user was following the user displayed in the User
+                    component in order to determine whether to display the follow or unfollow button.<br><br>
+                    My initial idea was to run through the user's followers and add them all to a new array within each
+                    User component and then check if the user's ID is in that.<br><br>
+                    However, this didn't update the follow/unfollow button because the array was recreated before the
+                    user prop had been passed back down from the parent.<br><br>
+                    I resolved this initially by delaying the array update but this didn't feel right.<br><br>
+                    After sleeping on it, I came back and found a way to get the follower IDs straight from the user
+                    prop using the map() function.<br><br>
+                    This allowed the follow/unfollow buttons to update, even if the prop took a little while to update.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <a href="https://laravel.com/" class="px-2 py-1 rounded-lg bg-laravel">Laravel</a>
+                    <a href="https://jetstream.laravel.com/2.x/introduction.html" class="px-2 py-1 rounded-lg bg-jetstream">Jetstream</a>
+                    <a href="https://vuejs.org/" class="px-2 py-1 rounded-lg bg-vue">Vue</a>
+                    <a href="https://laravel.com/docs/9.x/sanctum" class="px-2 py-1 rounded-lg bg-laravel">Sanctum</a>
+                    <a href="https://tailwindcss.com/" class="px-2 py-1 rounded-lg bg-tailwind">Tailwind CSS</a>
+                    <a href="https://jetstream.laravel.com/2.x/stacks/inertia.html" class="px-2 py-1 rounded-lg bg-jetstream">Inertia</a>
+                    <a href="https://laravel.com/docs/9.x/fortify" class="px-2 py-1 rounded-lg bg-laravel">Fortify</a>
+                </div>
+            </div>
+        </div>
+        <!-- End project card -->
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.screenshots-slider').slick({
+                dots: true,
+            })
+        });
+    </script>
+</body>
+</html>
