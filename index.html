@@ -70,6 +70,12 @@
         .bg-openlayers:hover {
             background-color: #2ea8b8;
         }
+        .bg-stripe {
+            background-color: #635bff;
+        }
+        .bg-stripe:hover {
+            background-color: #3d33ff;
+        }
         .slick-arrow {
             z-index: 100;
             text-shadow: black 2px 2px 10px;
@@ -132,6 +138,51 @@
                 See below a selection of projects I've completed and lessons I learned from them.
             </p>
         </div>
+        <!-- Start project card -->
+        <div class="md:m-6 mt-0 bg-gray-600 md:rounded-b-lg md:shadow-xl border-b md:border-none border-gray-300">
+            <div class="screenshots-slider">
+                <a href="media/Stripe/StripeDemo.gif"><img src="media/Stripe/StripeDemo.gif"></a>
+                <a href="media/Stripe/signUp.png"><img src="media/Stripe/signUp.png"></a>
+                <a href="media/Stripe/signUpJS.png"><img src="media/Stripe/signUpJS.png"></a>
+                <a href="media/Stripe/index.png"><img src="media/Stripe/index.png"></a>
+                <a href="media/Stripe/register.png"><img src="media/Stripe/register.png"></a>
+                <a href="media/Stripe/restart.png"><img src="media/Stripe/restart.png"></a>
+            </div>
+            <div class="p-4 md:p-6 pt-0 md:pt-0">
+                <div class="md:flex flex-wrap mb-4">
+                    <h1 class="text-3xl flex-1">Stripe Subscription Integration</h1>
+                </div>
+                <p class="view-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">View Details...</p>
+                <div class="project-description">
+                    <p class="mb-12">
+                        I set up a monthly subscription system using Laravel Cashier and Stripe.<br><br>
+                        Users see a dynamic section based on their current subscription status.<br><br>
+                        If they've never been subscribed, they can sign up.<br><br>
+                        If they're subscription is active, they can cancel.<br><br>
+                        If they've cancelled but their final month hasn't run out, they can resume.<br><br>
+                        They can also see their payment history and download a PDF invoice for each transaction.<br><br>
+                        If the user has previously added a card, they can update their card details.<br><br>
+                    </p>
+                    <h3 class="text-xl mb-4">What I learned</h3>
+                    <p class="mb-6">
+                        It's fairly straight-forward to set up a Stripe payment system with Laravel Cashier.<br><br>
+                        That's pretty much all there is to say about it.<br><br>
+                        I just followed the docs and didn't encounter any major issues i.e. learning opportunities.
+                    </p>
+                    <p class="hide-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">Hide Details</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <a href="https://laravel.com/" class="px-2 py-1 rounded-lg bg-laravel">Laravel</a>
+                    <a href="https://stripe.com/" class="px-2 py-1 rounded-lg bg-stripe">Stripe</a>
+                    <a href="https://jquery.com/" class="px-2 py-1 rounded-lg bg-jquery">jQuery</a>
+                    <a href="https://laravel.com/docs/9.x/billing" class="px-2 py-1 rounded-lg bg-laravel">Cashier</a>
+                    <a href="https://getbootstrap.com/" class="px-2 py-1 rounded-lg bg-bootstrap">Bootstrap CSS</a>
+                    <a href="https://www.mysql.com/" class="px-2 py-1 rounded-lg bg-mysql">MySQL</a>
+                    <a href="https://www.docker.com/" class="px-2 py-1 rounded-lg bg-docker">Docker</a>
+                </div>
+            </div>
+        </div>
+        <!-- End project card -->
         <!-- Start project card -->
         <div class="md:m-6 mt-0 bg-gray-600 md:rounded-b-lg md:shadow-xl border-b md:border-none border-gray-300">
             <div class="screenshots-slider">
@@ -257,12 +308,12 @@
             $('.view-details').click(function() {
                 let $description = $(this).siblings('.project-description');
                 $description.slideToggle();
-                $(this).toggle();
+                $(this).slideToggle();
             })
             $('.hide-details').click(function() {
                 let $description = $(this).parent();
                 $description.slideToggle();
-                $(this).parent().siblings('.view-details').toggle();
+                $(this).parent().siblings('.view-details').slideToggle();
             })
             $('.project-description').each(function() {
                 $(this).hide();
