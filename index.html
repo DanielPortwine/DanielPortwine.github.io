@@ -34,6 +34,42 @@
         .bg-jetstream:hover {
             background-color: #5767f4;
         }
+        .bg-mysql {
+            background-color: #3e6e93;
+        }
+        .bg-mysql:hover {
+            background-color: #355e7e;
+        }
+        .bg-bootstrap {
+            background-color: #7633f9;
+        }
+        .bg-bootstrap:hover {
+            background-color: #5808f7;
+        }
+        .bg-osm {
+            background-color: #97c980;
+        }
+        .bg-osm:hover {
+            background-color: #7bba5e;
+        }
+        .bg-docker {
+            background-color: #2496ed;
+        }
+        .bg-docker:hover {
+            background-color: #1180d4;
+        }
+        .bg-jquery {
+            background-color: #0769ad;
+        }
+        .bg-jquery:hover {
+            background-color: #065893;
+        }
+        .bg-openlayers {
+            background-color: #35bbcd;
+        }
+        .bg-openlayers:hover {
+            background-color: #2ea8b8;
+        }
         .slick-arrow {
             z-index: 100;
             text-shadow: black 2px 2px 10px;
@@ -144,10 +180,66 @@
                     <a href="https://tailwindcss.com/" class="px-2 py-1 rounded-lg bg-tailwind">Tailwind CSS</a>
                     <a href="https://jetstream.laravel.com/2.x/stacks/inertia.html" class="px-2 py-1 rounded-lg bg-jetstream">Inertia</a>
                     <a href="https://laravel.com/docs/9.x/fortify" class="px-2 py-1 rounded-lg bg-laravel">Fortify</a>
+                    <a href="https://www.mysql.com/" class="px-2 py-1 rounded-lg bg-mysql">MySQL</a>
+                    <a href="https://www.docker.com/" class="px-2 py-1 rounded-lg bg-docker">Docker</a>
                 </div>
             </div>
         </div>
         <!-- End project card -->
+        <!-- Start project card -->
+        <div class="md:m-6 mt-0 bg-gray-600 md:rounded-b-lg md:shadow-xl border-b md:border-none border-gray-300">
+            <div class="screenshots-slider">
+                <a href="media/Map/MapDemo.gif"><img src="media/Map/MapDemo.gif"></a>
+                <a href="media/Map/mapSearch.png"><img src="media/Map/mapSearch.png"></a>
+                <a href="media/Map/search.png"><img src="media/Map/search.png"></a>
+                <a href="media/Map/setBoundingBox.png"><img src="media/Map/setBoundingBox.png"></a>
+                <a href="media/Map/showSpot.png"><img src="media/Map/showSpot.png"></a>
+            </div>
+            <div class="p-4 md:p-6 pt-0 md:pt-0">
+                <div class="md:flex flex-wrap mb-4">
+                    <h1 class="text-3xl flex-1">Open Street Map Integration</h1>
+                </div>
+                <p class="mb-12">
+                    For this project, I was adding a map that showed markers for certain locations provided by longitude
+                    and latitude from a database.<br><br>
+                    New locations can be created by clicking on the map.<br><br>
+                    It also has search functionality, using Nominatim, that can be used to travel to one of the saved
+                    locations or to a city, town or country.<br><br>
+                    If a user has a 'hometown' set in their profile settings, the map will load there and a bounding box
+                    can be toggled to show the area of their hometown.
+                </p>
+                <h3 class="text-xl mb-4">What I learned</h3>
+                <p class="mb-12">
+                    Primarily, I learned how to use the OpenLayers library to create the different layers for the map,
+                    the markers and the popups.<br><br>
+                    As well as navigating to certain points on the map.<br><br>
+                    I learned that there are many standards for latitude and longitude values and how to convert them
+                    into the standard needed.<br><br>
+                    I also learned how to integrate the Nominatim API to geocode (get lat & lon from place names) then
+                    parse & cache the results, since they aren't likely to change significantly between requests.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <a href="https://laravel.com/" class="px-2 py-1 rounded-lg bg-laravel">Laravel</a>
+                    <a href="https://www.openstreetmap.org/" class="px-2 py-1 rounded-lg bg-osm">Open Street Map</a>
+                    <a href="https://openlayers.org/" class="px-2 py-1 rounded-lg bg-openlayers">OpenLayers</a>
+                    <a href="https://jquery.com/" class="px-2 py-1 rounded-lg bg-jquery">jQuery</a>
+                    <a href="https://getbootstrap.com/" class="px-2 py-1 rounded-lg bg-bootstrap">Bootstrap CSS</a>
+                    <a href="https://nominatim.org/" class="px-2 py-1 rounded-lg bg-osm">Nominatim</a>
+                    <a href="https://www.mysql.com/" class="px-2 py-1 rounded-lg bg-mysql">MySQL</a>
+                    <a href="https://www.docker.com/" class="px-2 py-1 rounded-lg bg-docker">Docker</a>
+                </div>
+            </div>
+        </div>
+        <!-- End project card -->
+    </div>
+    <div class="bg-gray-600 p-6">
+        <div class="max-w-6xl mx-auto flex text-3xl">
+            <p class="flex-1">Get in touch</p>
+            <div class="flex flex-none gap-4">
+                <a href="https://twitter.com/DanielPortwine" target="_blank" class="text-blue-400 hover:text-blue-300"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:dan.portwine@protonmail.com" target="_blank" class="hover:text-gray-200"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
     </div>
     <script>
         $(document).ready(function() {
