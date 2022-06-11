@@ -146,32 +146,36 @@
                     <h1 class="text-3xl flex-1">Twitter-style Social Platform</h1>
                     <a href="https://github.com/DanielPortwine/Social" class="flex-none text-blue-400 hover:text-blue-300">View on GitHub</a>
                 </div>
-                <p class="mb-12">
-                    I decided to learn Vue.js by building a simple single page social platform based on Twitter.<br><br>
-                    The basic concept is that users can register, login and then create posts. They can then comment on
-                    their own or other users' posts.<br><br>
-                    The lists of posts use infinite scroll for a better user experience.<br><br>
-                    Users can click on a user's name to see more information about that user as well as a list of
-                    that users' posts.<br><br>
-                    There is also a side tab that lists the most followed users.
-                </p>
-                <h3 class="text-xl mb-4">What I learned</h3>
-                <p class="mb-12">
-                    Building an app in a new framework, in this case Vue, is inevitably going to cause you to learn the
-                    basics. Things like components, props, events etc.<br><br>
-                    But one of the more specific lessons I learned was to use passed-down props rather than generating
-                    what I needed within the child component itself.<br><br>
-                    For example, I wanted to find out if the current user was following the user displayed in the User
-                    component in order to determine whether to display the follow or unfollow button.<br><br>
-                    My initial idea was to run through the user's followers and add them all to a new array within each
-                    User component and then check if the user's ID is in that.<br><br>
-                    However, this didn't update the follow/unfollow button because the array was recreated before the
-                    user prop had been passed back down from the parent.<br><br>
-                    I resolved this initially by delaying the array update but this didn't feel right.<br><br>
-                    After sleeping on it, I came back and found a way to get the follower IDs straight from the user
-                    prop using the map() function.<br><br>
-                    This allowed the follow/unfollow buttons to update, even if the prop took a little while to update.
-                </p>
+                <p class="view-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">View Details...</p>
+                <div class="project-description">
+                    <p class="mb-12">
+                        I decided to learn Vue.js by building a simple single page social platform based on Twitter.<br><br>
+                        The basic concept is that users can register, login and then create posts. They can then comment on
+                        their own or other users' posts.<br><br>
+                        The lists of posts use infinite scroll for a better user experience.<br><br>
+                        Users can click on a user's name to see more information about that user as well as a list of
+                        that users' posts.<br><br>
+                        There is also a side tab that lists the most followed users.
+                    </p>
+                    <h3 class="text-xl mb-4">What I learned</h3>
+                    <p class="mb-6">
+                        Building an app in a new framework, in this case Vue, is inevitably going to cause you to learn the
+                        basics. Things like components, props, events etc.<br><br>
+                        But one of the more specific lessons I learned was to use passed-down props rather than generating
+                        what I needed within the child component itself.<br><br>
+                        For example, I wanted to find out if the current user was following the user displayed in the User
+                        component in order to determine whether to display the follow or unfollow button.<br><br>
+                        My initial idea was to run through the user's followers and add them all to a new array within each
+                        User component and then check if the user's ID is in that.<br><br>
+                        However, this didn't update the follow/unfollow button because the array was recreated before the
+                        user prop had been passed back down from the parent.<br><br>
+                        I resolved this initially by delaying the array update but this didn't feel right.<br><br>
+                        After sleeping on it, I came back and found a way to get the follower IDs straight from the user
+                        prop using the map() function.<br><br>
+                        This allowed the follow/unfollow buttons to update, even if the prop took a little while to update.
+                    </p>
+                    <p class="hide-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">Hide Details</p>
+                </div>
                 <div class="flex flex-wrap gap-2">
                     <a href="https://laravel.com/" class="px-2 py-1 rounded-lg bg-laravel">Laravel</a>
                     <a href="https://jetstream.laravel.com/2.x/introduction.html" class="px-2 py-1 rounded-lg bg-jetstream">Jetstream</a>
@@ -199,25 +203,29 @@
                 <div class="md:flex flex-wrap mb-4">
                     <h1 class="text-3xl flex-1">Open Street Map Integration</h1>
                 </div>
-                <p class="mb-12">
-                    For this project, I was adding a map that showed markers for certain locations provided by longitude
-                    and latitude from a database.<br><br>
-                    New locations can be created by clicking on the map.<br><br>
-                    It also has search functionality, using Nominatim, that can be used to travel to one of the saved
-                    locations or to a city, town or country.<br><br>
-                    If a user has a 'hometown' set in their profile settings, the map will load there and a bounding box
-                    can be toggled to show the area of their hometown.
-                </p>
-                <h3 class="text-xl mb-4">What I learned</h3>
-                <p class="mb-12">
-                    Primarily, I learned how to use the OpenLayers library to create the different layers for the map,
-                    the markers and the popups.<br><br>
-                    As well as navigating to certain points on the map.<br><br>
-                    I learned that there are many standards for latitude and longitude values and how to convert them
-                    into the standard needed.<br><br>
-                    I also learned how to integrate the Nominatim API to geocode (get lat & lon from place names) then
-                    parse & cache the results, since they aren't likely to change significantly between requests.
-                </p>
+                <p class="view-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">View Details...</p>
+                <div class="project-description">
+                    <p class="mb-12">
+                        For this project, I was adding a map that showed markers for certain locations provided by longitude
+                        and latitude from a database.<br><br>
+                        New locations can be created by clicking on the map.<br><br>
+                        It also has search functionality, using Nominatim, that can be used to travel to one of the saved
+                        locations or to a city, town or country.<br><br>
+                        If a user has a 'hometown' set in their profile settings, the map will load there and a bounding box
+                        can be toggled to show the area of their hometown.
+                    </p>
+                    <h3 class="text-xl mb-4">What I learned</h3>
+                    <p class="mb-6">
+                        Primarily, I learned how to use the OpenLayers library to create the different layers for the map,
+                        the markers and the popups.<br><br>
+                        As well as navigating to certain points on the map.<br><br>
+                        I learned that there are many standards for latitude and longitude values and how to convert them
+                        into the standard needed.<br><br>
+                        I also learned how to integrate the Nominatim API to geocode (get lat & lon from place names) then
+                        parse & cache the results, since they aren't likely to change significantly between requests.
+                    </p>
+                    <p class="hide-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">Hide Details</p>
+                </div>
                 <div class="flex flex-wrap gap-2">
                     <a href="https://laravel.com/" class="px-2 py-1 rounded-lg bg-laravel">Laravel</a>
                     <a href="https://www.openstreetmap.org/" class="px-2 py-1 rounded-lg bg-osm">Open Street Map</a>
@@ -245,6 +253,19 @@
         $(document).ready(function() {
             $('.screenshots-slider').slick({
                 dots: true,
+            });
+            $('.view-details').click(function() {
+                let $description = $(this).siblings('.project-description');
+                $description.slideToggle();
+                $(this).toggle();
+            })
+            $('.hide-details').click(function() {
+                let $description = $(this).parent();
+                $description.slideToggle();
+                $(this).parent().siblings('.view-details').toggle();
+            })
+            $('.project-description').each(function() {
+                $(this).hide();
             })
         });
     </script>
