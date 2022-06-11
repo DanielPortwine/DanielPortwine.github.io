@@ -135,161 +135,170 @@
                 Integrating third-party APIs<br>
                 Building custom APIs<br>
                 Automation<br><br>
-                See below a selection of projects I've completed and lessons I learned from them.
+                See below a selection of projects I've completed and lessons I learned from them.<br><br>
+                Click an image to get a bigger view. The first ones for each project open GIF demonstrations.
             </p>
         </div>
-        <!-- Start project card -->
-        <div class="md:m-6 mt-0 bg-gray-600 md:rounded-b-lg md:shadow-xl border-b md:border-none border-gray-300">
-            <div class="screenshots-slider">
-                <a href="media/Stripe/StripeDemo.gif"><img src="media/Stripe/StripeDemo.gif"></a>
-                <a href="media/Stripe/signUp.png"><img src="media/Stripe/signUp.png"></a>
-                <a href="media/Stripe/signUpJS.png"><img src="media/Stripe/signUpJS.png"></a>
-                <a href="media/Stripe/index.png"><img src="media/Stripe/index.png"></a>
-                <a href="media/Stripe/register.png"><img src="media/Stripe/register.png"></a>
-                <a href="media/Stripe/restart.png"><img src="media/Stripe/restart.png"></a>
+        <div class="lg:grid lg:grid-cols-2 lg:m-6 lg:gap-6">
+            <!-- Start project card -->
+            <div class="project-card">
+                <div class="mt-0 bg-gray-600 lg:rounded-b-lg lg:shadow-xl border-b lg:border-none border-gray-300">
+                    <div class="screenshots-slider">
+                        <a href="media/Stripe/StripeDemo.gif"><img src="media/Stripe/StripeDemo.png"></a>
+                        <a href="media/Stripe/signUp.png"><img src="media/Stripe/signUp.png"></a>
+                        <a href="media/Stripe/signUpJS.png"><img src="media/Stripe/signUpJS.png"></a>
+                        <a href="media/Stripe/index.png"><img src="media/Stripe/index.png"></a>
+                        <a href="media/Stripe/register.png"><img src="media/Stripe/register.png"></a>
+                        <a href="media/Stripe/restart.png"><img src="media/Stripe/restart.png"></a>
+                    </div>
+                    <div class="p-4 md:p-6 pt-0 md:pt-0">
+                        <div class="flex flex-wrap items-center mb-4">
+                            <h1 class="text-3xl flex-1">Stripe Subscription Integration</h1>
+                        </div>
+                        <p class="view-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">View Details...</p>
+                        <div class="project-description">
+                            <p class="mb-12">
+                                I set up a monthly subscription system using Laravel Cashier and Stripe.<br><br>
+                                Users see a dynamic section based on their current subscription status.<br><br>
+                                If they've never been subscribed, they can sign up.<br><br>
+                                If they're subscription is active, they can cancel.<br><br>
+                                If they've cancelled but their final month hasn't run out, they can resume.<br><br>
+                                They can also see their payment history and download a PDF invoice for each transaction.<br><br>
+                                If the user has previously added a card, they can update their card details.<br><br>
+                            </p>
+                            <h3 class="text-xl mb-4">What I learned</h3>
+                            <p class="mb-6">
+                                It's fairly straight-forward to set up a Stripe payment system with Laravel Cashier.<br><br>
+                                That's pretty much all there is to say about it.<br><br>
+                                I just followed the docs and didn't encounter any major issues i.e. learning opportunities.
+                            </p>
+                            <p class="hide-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">Hide Details</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://laravel.com/" class="px-2 py-1 rounded-lg bg-laravel">Laravel</a>
+                            <a href="https://stripe.com/" class="px-2 py-1 rounded-lg bg-stripe">Stripe</a>
+                            <a href="https://jquery.com/" class="px-2 py-1 rounded-lg bg-jquery">jQuery</a>
+                            <a href="https://laravel.com/docs/9.x/billing" class="px-2 py-1 rounded-lg bg-laravel">Cashier</a>
+                            <a href="https://getbootstrap.com/" class="px-2 py-1 rounded-lg bg-bootstrap">Bootstrap CSS</a>
+                            <a href="https://www.mysql.com/" class="px-2 py-1 rounded-lg bg-mysql">MySQL</a>
+                            <a href="https://www.docker.com/" class="px-2 py-1 rounded-lg bg-docker">Docker</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="p-4 md:p-6 pt-0 md:pt-0">
-                <div class="md:flex flex-wrap mb-4">
-                    <h1 class="text-3xl flex-1">Stripe Subscription Integration</h1>
-                </div>
-                <p class="view-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">View Details...</p>
-                <div class="project-description">
-                    <p class="mb-12">
-                        I set up a monthly subscription system using Laravel Cashier and Stripe.<br><br>
-                        Users see a dynamic section based on their current subscription status.<br><br>
-                        If they've never been subscribed, they can sign up.<br><br>
-                        If they're subscription is active, they can cancel.<br><br>
-                        If they've cancelled but their final month hasn't run out, they can resume.<br><br>
-                        They can also see their payment history and download a PDF invoice for each transaction.<br><br>
-                        If the user has previously added a card, they can update their card details.<br><br>
-                    </p>
-                    <h3 class="text-xl mb-4">What I learned</h3>
-                    <p class="mb-6">
-                        It's fairly straight-forward to set up a Stripe payment system with Laravel Cashier.<br><br>
-                        That's pretty much all there is to say about it.<br><br>
-                        I just followed the docs and didn't encounter any major issues i.e. learning opportunities.
-                    </p>
-                    <p class="hide-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">Hide Details</p>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <a href="https://laravel.com/" class="px-2 py-1 rounded-lg bg-laravel">Laravel</a>
-                    <a href="https://stripe.com/" class="px-2 py-1 rounded-lg bg-stripe">Stripe</a>
-                    <a href="https://jquery.com/" class="px-2 py-1 rounded-lg bg-jquery">jQuery</a>
-                    <a href="https://laravel.com/docs/9.x/billing" class="px-2 py-1 rounded-lg bg-laravel">Cashier</a>
-                    <a href="https://getbootstrap.com/" class="px-2 py-1 rounded-lg bg-bootstrap">Bootstrap CSS</a>
-                    <a href="https://www.mysql.com/" class="px-2 py-1 rounded-lg bg-mysql">MySQL</a>
-                    <a href="https://www.docker.com/" class="px-2 py-1 rounded-lg bg-docker">Docker</a>
+            <!-- End project card -->
+            <!-- Start project card -->
+            <div class="project-card">
+                <div class="mt-0 bg-gray-600 lg:rounded-b-lg lg:shadow-xl border-b lg:border-none border-gray-300">
+                    <div class="screenshots-slider">
+                        <a href="media/Social/SocialDemo.gif"><img src="media/Social/SocialDemo.png"></a>
+                        <a href="media/Social/SocialLesson.png"><img src="media/Social/SocialLesson.png"></a>
+                        <a href="media/Social/ApiRoutes.png"><img src="media/Social/ApiRoutes.png"></a>
+                        <a href="media/Social/PostCard.png"><img src="media/Social/PostCard.png"></a>
+                        <a href="media/Social/UserCard.png"><img src="media/Social/UserCard.png"></a>
+                    </div>
+                    <div class="p-4 md:p-6 pt-0 md:pt-0">
+                        <div class="flex flex-wrap items-center mb-4">
+                            <h1 class="text-3xl flex-1">Twitter-style Social Platform</h1>
+                            <a href="https://github.com/DanielPortwine/Social" class="flex-none text-3xl text-white hover:text-gray-200"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <p class="view-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">View Details...</p>
+                        <div class="project-description">
+                            <p class="mb-12">
+                                I decided to learn Vue.js by building a simple single page social platform based on Twitter.<br><br>
+                                The basic concept is that users can register, login and then create posts. They can then comment on
+                                their own or other users' posts.<br><br>
+                                The lists of posts use infinite scroll for a better user experience.<br><br>
+                                Users can click on a user's name to see more information about that user as well as a list of
+                                that users' posts.<br><br>
+                                There is also a side tab that lists the most followed users.
+                            </p>
+                            <h3 class="text-xl mb-4">What I learned</h3>
+                            <p class="mb-6">
+                                Building an app in a new framework, in this case Vue, is inevitably going to cause you to learn the
+                                basics. Things like components, props, events etc.<br><br>
+                                But one of the more specific lessons I learned was to use passed-down props rather than generating
+                                what I needed within the child component itself.<br><br>
+                                For example, I wanted to find out if the current user was following the user displayed in the User
+                                component in order to determine whether to display the follow or unfollow button.<br><br>
+                                My initial idea was to run through the user's followers and add them all to a new array within each
+                                User component and then check if the user's ID is in that.<br><br>
+                                However, this didn't update the follow/unfollow button because the array was recreated before the
+                                user prop had been passed back down from the parent.<br><br>
+                                I resolved this initially by delaying the array update but this didn't feel right.<br><br>
+                                After sleeping on it, I came back and found a way to get the follower IDs straight from the user
+                                prop using the map() function.<br><br>
+                                This allowed the follow/unfollow buttons to update, even if the prop took a little while to update.
+                            </p>
+                            <p class="hide-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">Hide Details</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://laravel.com/" class="px-2 py-1 rounded-lg bg-laravel">Laravel</a>
+                            <a href="https://jetstream.laravel.com/2.x/introduction.html" class="px-2 py-1 rounded-lg bg-jetstream">Jetstream</a>
+                            <a href="https://vuejs.org/" class="px-2 py-1 rounded-lg bg-vue">Vue</a>
+                            <a href="https://laravel.com/docs/9.x/sanctum" class="px-2 py-1 rounded-lg bg-laravel">Sanctum</a>
+                            <a href="https://tailwindcss.com/" class="px-2 py-1 rounded-lg bg-tailwind">Tailwind CSS</a>
+                            <a href="https://jetstream.laravel.com/2.x/stacks/inertia.html" class="px-2 py-1 rounded-lg bg-jetstream">Inertia</a>
+                            <a href="https://laravel.com/docs/9.x/fortify" class="px-2 py-1 rounded-lg bg-laravel">Fortify</a>
+                            <a href="https://www.mysql.com/" class="px-2 py-1 rounded-lg bg-mysql">MySQL</a>
+                            <a href="https://www.docker.com/" class="px-2 py-1 rounded-lg bg-docker">Docker</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- End project card -->
+            <!-- Start project card -->
+            <div class="project-card">
+                <div class="mt-0 bg-gray-600 lg:rounded-b-lg lg:shadow-xl border-b lg:border-none border-gray-300">
+                    <div class="screenshots-slider">
+                        <a href="media/Map/MapDemo.gif"><img src="media/Map/MapDemo.png"></a>
+                        <a href="media/Map/mapSearch.png"><img src="media/Map/mapSearch.png"></a>
+                        <a href="media/Map/search.png"><img src="media/Map/search.png"></a>
+                        <a href="media/Map/setBoundingBox.png"><img src="media/Map/setBoundingBox.png"></a>
+                        <a href="media/Map/showSpot.png"><img src="media/Map/showSpot.png"></a>
+                    </div>
+                    <div class="p-4 md:p-6 pt-0 md:pt-0">
+                        <div class="flex flex-wrap items-center mb-4">
+                            <h1 class="text-3xl flex-1">Open Street Map Integration</h1>
+                        </div>
+                        <p class="view-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">View Details...</p>
+                        <div class="project-description">
+                            <p class="mb-12">
+                                For this project, I was adding a map that showed markers for certain locations provided by longitude
+                                and latitude from a database.<br><br>
+                                New locations can be created by clicking on the map.<br><br>
+                                It also has search functionality, using Nominatim, that can be used to travel to one of the saved
+                                locations or to a city, town or country.<br><br>
+                                If a user has a 'hometown' set in their profile settings, the map will load there and a bounding box
+                                can be toggled to show the area of their hometown.
+                            </p>
+                            <h3 class="text-xl mb-4">What I learned</h3>
+                            <p class="mb-6">
+                                Primarily, I learned how to use the OpenLayers library to create the different layers for the map,
+                                the markers and the popups.<br><br>
+                                As well as navigating to certain points on the map.<br><br>
+                                I learned that there are many standards for latitude and longitude values and how to convert them
+                                into the standard needed.<br><br>
+                                I also learned how to integrate the Nominatim API to geocode (get lat & lon from place names) then
+                                parse & cache the results, since they aren't likely to change significantly between requests.
+                            </p>
+                            <p class="hide-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">Hide Details</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://laravel.com/" class="px-2 py-1 rounded-lg bg-laravel">Laravel</a>
+                            <a href="https://www.openstreetmap.org/" class="px-2 py-1 rounded-lg bg-osm">Open Street Map</a>
+                            <a href="https://openlayers.org/" class="px-2 py-1 rounded-lg bg-openlayers">OpenLayers</a>
+                            <a href="https://jquery.com/" class="px-2 py-1 rounded-lg bg-jquery">jQuery</a>
+                            <a href="https://getbootstrap.com/" class="px-2 py-1 rounded-lg bg-bootstrap">Bootstrap CSS</a>
+                            <a href="https://nominatim.org/" class="px-2 py-1 rounded-lg bg-osm">Nominatim</a>
+                            <a href="https://www.mysql.com/" class="px-2 py-1 rounded-lg bg-mysql">MySQL</a>
+                            <a href="https://www.docker.com/" class="px-2 py-1 rounded-lg bg-docker">Docker</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End project card -->
         </div>
-        <!-- End project card -->
-        <!-- Start project card -->
-        <div class="md:m-6 mt-0 bg-gray-600 md:rounded-b-lg md:shadow-xl border-b md:border-none border-gray-300">
-            <div class="screenshots-slider">
-                <a href="media/Social/SocialDemo.gif"><img src="media/Social/SocialDemo.gif"></a>
-                <a href="media/Social/SocialLesson.png"><img src="media/Social/SocialLesson.png"></a>
-                <a href="media/Social/ApiRoutes.png"><img src="media/Social/ApiRoutes.png"></a>
-                <a href="media/Social/PostCard.png"><img src="media/Social/PostCard.png"></a>
-                <a href="media/Social/UserCard.png"><img src="media/Social/UserCard.png"></a>
-            </div>
-            <div class="p-4 md:p-6 pt-0 md:pt-0">
-                <div class="md:flex flex-wrap mb-4">
-                    <h1 class="text-3xl flex-1">Twitter-style Social Platform</h1>
-                    <a href="https://github.com/DanielPortwine/Social" class="flex-none text-blue-400 hover:text-blue-300">View on GitHub</a>
-                </div>
-                <p class="view-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">View Details...</p>
-                <div class="project-description">
-                    <p class="mb-12">
-                        I decided to learn Vue.js by building a simple single page social platform based on Twitter.<br><br>
-                        The basic concept is that users can register, login and then create posts. They can then comment on
-                        their own or other users' posts.<br><br>
-                        The lists of posts use infinite scroll for a better user experience.<br><br>
-                        Users can click on a user's name to see more information about that user as well as a list of
-                        that users' posts.<br><br>
-                        There is also a side tab that lists the most followed users.
-                    </p>
-                    <h3 class="text-xl mb-4">What I learned</h3>
-                    <p class="mb-6">
-                        Building an app in a new framework, in this case Vue, is inevitably going to cause you to learn the
-                        basics. Things like components, props, events etc.<br><br>
-                        But one of the more specific lessons I learned was to use passed-down props rather than generating
-                        what I needed within the child component itself.<br><br>
-                        For example, I wanted to find out if the current user was following the user displayed in the User
-                        component in order to determine whether to display the follow or unfollow button.<br><br>
-                        My initial idea was to run through the user's followers and add them all to a new array within each
-                        User component and then check if the user's ID is in that.<br><br>
-                        However, this didn't update the follow/unfollow button because the array was recreated before the
-                        user prop had been passed back down from the parent.<br><br>
-                        I resolved this initially by delaying the array update but this didn't feel right.<br><br>
-                        After sleeping on it, I came back and found a way to get the follower IDs straight from the user
-                        prop using the map() function.<br><br>
-                        This allowed the follow/unfollow buttons to update, even if the prop took a little while to update.
-                    </p>
-                    <p class="hide-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">Hide Details</p>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <a href="https://laravel.com/" class="px-2 py-1 rounded-lg bg-laravel">Laravel</a>
-                    <a href="https://jetstream.laravel.com/2.x/introduction.html" class="px-2 py-1 rounded-lg bg-jetstream">Jetstream</a>
-                    <a href="https://vuejs.org/" class="px-2 py-1 rounded-lg bg-vue">Vue</a>
-                    <a href="https://laravel.com/docs/9.x/sanctum" class="px-2 py-1 rounded-lg bg-laravel">Sanctum</a>
-                    <a href="https://tailwindcss.com/" class="px-2 py-1 rounded-lg bg-tailwind">Tailwind CSS</a>
-                    <a href="https://jetstream.laravel.com/2.x/stacks/inertia.html" class="px-2 py-1 rounded-lg bg-jetstream">Inertia</a>
-                    <a href="https://laravel.com/docs/9.x/fortify" class="px-2 py-1 rounded-lg bg-laravel">Fortify</a>
-                    <a href="https://www.mysql.com/" class="px-2 py-1 rounded-lg bg-mysql">MySQL</a>
-                    <a href="https://www.docker.com/" class="px-2 py-1 rounded-lg bg-docker">Docker</a>
-                </div>
-            </div>
-        </div>
-        <!-- End project card -->
-        <!-- Start project card -->
-        <div class="md:m-6 mt-0 bg-gray-600 md:rounded-b-lg md:shadow-xl border-b md:border-none border-gray-300">
-            <div class="screenshots-slider">
-                <a href="media/Map/MapDemo.gif"><img src="media/Map/MapDemo.gif"></a>
-                <a href="media/Map/mapSearch.png"><img src="media/Map/mapSearch.png"></a>
-                <a href="media/Map/search.png"><img src="media/Map/search.png"></a>
-                <a href="media/Map/setBoundingBox.png"><img src="media/Map/setBoundingBox.png"></a>
-                <a href="media/Map/showSpot.png"><img src="media/Map/showSpot.png"></a>
-            </div>
-            <div class="p-4 md:p-6 pt-0 md:pt-0">
-                <div class="md:flex flex-wrap mb-4">
-                    <h1 class="text-3xl flex-1">Open Street Map Integration</h1>
-                </div>
-                <p class="view-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">View Details...</p>
-                <div class="project-description">
-                    <p class="mb-12">
-                        For this project, I was adding a map that showed markers for certain locations provided by longitude
-                        and latitude from a database.<br><br>
-                        New locations can be created by clicking on the map.<br><br>
-                        It also has search functionality, using Nominatim, that can be used to travel to one of the saved
-                        locations or to a city, town or country.<br><br>
-                        If a user has a 'hometown' set in their profile settings, the map will load there and a bounding box
-                        can be toggled to show the area of their hometown.
-                    </p>
-                    <h3 class="text-xl mb-4">What I learned</h3>
-                    <p class="mb-6">
-                        Primarily, I learned how to use the OpenLayers library to create the different layers for the map,
-                        the markers and the popups.<br><br>
-                        As well as navigating to certain points on the map.<br><br>
-                        I learned that there are many standards for latitude and longitude values and how to convert them
-                        into the standard needed.<br><br>
-                        I also learned how to integrate the Nominatim API to geocode (get lat & lon from place names) then
-                        parse & cache the results, since they aren't likely to change significantly between requests.
-                    </p>
-                    <p class="hide-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">Hide Details</p>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <a href="https://laravel.com/" class="px-2 py-1 rounded-lg bg-laravel">Laravel</a>
-                    <a href="https://www.openstreetmap.org/" class="px-2 py-1 rounded-lg bg-osm">Open Street Map</a>
-                    <a href="https://openlayers.org/" class="px-2 py-1 rounded-lg bg-openlayers">OpenLayers</a>
-                    <a href="https://jquery.com/" class="px-2 py-1 rounded-lg bg-jquery">jQuery</a>
-                    <a href="https://getbootstrap.com/" class="px-2 py-1 rounded-lg bg-bootstrap">Bootstrap CSS</a>
-                    <a href="https://nominatim.org/" class="px-2 py-1 rounded-lg bg-osm">Nominatim</a>
-                    <a href="https://www.mysql.com/" class="px-2 py-1 rounded-lg bg-mysql">MySQL</a>
-                    <a href="https://www.docker.com/" class="px-2 py-1 rounded-lg bg-docker">Docker</a>
-                </div>
-            </div>
-        </div>
-        <!-- End project card -->
     </div>
     <div class="bg-gray-600 p-6">
         <div class="max-w-6xl mx-auto flex text-3xl">
