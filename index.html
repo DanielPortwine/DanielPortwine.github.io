@@ -98,6 +98,14 @@
         .bg-php:hover {
             background-color: #6a76af;
         }
+        .bg-js {
+            background-color: #fcdc00;
+            color: black;
+        }
+        .bg-js:hover {
+            background-color: #ccb100;
+            color: black;
+        }
         .slick-arrow {
             z-index: 100;
             text-shadow: black 2px 2px 10px;
@@ -407,6 +415,61 @@
                             <a href="https://www.php.net/" class="px-2 py-1 rounded-lg bg-php">PHP</a>
                             <a href="https://jquery.com/" class="px-2 py-1 rounded-lg bg-jquery">jQuery</a>
                             <a href="https://getbootstrap.com/" class="px-2 py-1 rounded-lg bg-bootstrap">Bootstrap CSS</a>
+                            <a href="https://www.mysql.com/" class="px-2 py-1 rounded-lg bg-mysql">MySQL</a>
+                            <a href="https://www.docker.com/" class="px-2 py-1 rounded-lg bg-docker">Docker</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End project card -->
+            <!-- Start project card -->
+            <div class="project-card">
+                <div class="mt-0 bg-gray-600 lg:rounded-b-lg lg:shadow-xl border-b lg:border-none border-gray-300">
+                    <div class="screenshots-slider">
+                        <a href="media/Nutella/NutellaDemo.mp4"><img src="media/Nutella/NutellaDemo.png"></a>
+                        <a href="media/Nutella/generation.png"><img src="media/Nutella/generation.png"></a>
+                        <a href="media/Nutella/generation1.png"><img src="media/Nutella/generation1.png"></a>
+                        <a href="media/Nutella/generation2.png"><img src="media/Nutella/generation2.png"></a>
+                        <a href="media/Nutella/generation3.png"><img src="media/Nutella/generation3.png"></a>
+                        <a href="media/Nutella/generation4.png"><img src="media/Nutella/generation4.png"></a>
+                        <a href="media/Nutella/generation5.png"><img src="media/Nutella/generation5.png"></a>
+                        <a href="media/Nutella/generation6.png"><img src="media/Nutella/generation6.png"></a>
+                        <a href="media/Nutella/generation7.png"><img src="media/Nutella/generation7.png"></a>
+                        <a href="media/Nutella/generation8.png"><img src="media/Nutella/generation8.png"></a>
+                        <a href="media/Nutella/generation9.png"><img src="media/Nutella/generation9.png"></a>
+                    </div>
+                    <div class="p-4 md:p-6 pt-0 md:pt-0">
+                        <div class="flex flex-wrap items-center mb-4">
+                            <h1 class="text-3xl flex-1">Cellular Automaton Map Generator</h1>
+                            <a href="https://github.com/DanielPortwine/NutellaAddict" target="_blank" class="flex-none text-3xl text-white hover:text-gray-200"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <p class="view-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">View Details...</p>
+                        <div class="project-description">
+                            <p class="mb-12">
+                                This project was inspired by my python CLI survival game that sees users traverse random
+                                generated worlds hunting for resources trying to find a jar, some hazelnuts and some
+                                cocoa to make a jar of Nutella.<br><br>
+                                One of the key elements to that game was the map generation, using cellular automaton.<br><br>
+                                So, as I started to get into PHP, I decided to try to replicate this map generation
+                                algorithm as a PHP project rather than python.<br><br>
+                                This isn't a game like the python version. Instead it is simply a proof-of-concept for
+                                the map generation.<br><br>
+                                Users can set parameters for the generator such as the dimensions and map type as well as
+                                some finer controls over how the generation runs.<br><br>
+                                Generated maps 1000 tiles in area or less can be saved to the database and loaded at a
+                                later date.<br><br>
+                                But maps can be generated larger than 1000 tiles, up to 999x999, just not saved.
+                            </p>
+                            <h3 class="text-xl mb-4">What I learned</h3>
+                            <p class="mb-6">
+                                I learned how to write a cellular automaton algorithm for generating random maps.<br><br>
+                                I also learned how to track the time it takes scripts to run.
+                            </p>
+                            <p class="hide-details mb-2 text-blue-400 hover:text-blue-300 cursor-pointer">Hide Details</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://www.php.net/" class="px-2 py-1 rounded-lg bg-php">PHP</a>
+                            <a href="https://jquery.com/" class="px-2 py-1 rounded-lg bg-js">JavaScript</a>
                             <a href="https://www.mysql.com/" class="px-2 py-1 rounded-lg bg-mysql">MySQL</a>
                             <a href="https://www.docker.com/" class="px-2 py-1 rounded-lg bg-docker">Docker</a>
                         </div>
