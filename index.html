@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
     <style>
         .bg-vue {
@@ -151,6 +152,182 @@
     </style>
 </head>
 <body class="bg-gray-700 text-white">
+    <!-- Start Modals -->
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+         id="media-modal--stripe"
+         tabindex="-1"
+         aria-labelledby="media-modal--stripe"
+         aria-modal="true"
+         role="dialog"
+    >
+        <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
+            <div class="modal-content relative w-full pointer-events-auto outline-none">
+                <div class="modal-body relative">
+                    <div class="screenshots-slider-modal">
+                        <video controls><source src="media/Stripe/StripeDemo.mp4" type="video/mp4"></video>
+                        <img src="media/Stripe/signUp.png">
+                        <img src="media/Stripe/signUpJS.png">
+                        <img src="media/Stripe/index.png">
+                        <img src="media/Stripe/register.png">
+                        <img src="media/Stripe/restart.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+         id="media-modal--google"
+         tabindex="-1"
+         aria-labelledby="media-modal--google"
+         aria-modal="true"
+         role="dialog"
+    >
+        <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
+            <div class="modal-content relative w-full pointer-events-auto outline-none">
+                <div class="modal-body relative">
+                    <div class="screenshots-slider-modal">
+                        <img src="media/GoogleSignIn/GoogleDemo.png">
+                        <img src="media/GoogleSignIn/login.png">
+                        <img src="media/GoogleSignIn/auth.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+         id="media-modal--user-delete"
+         tabindex="-1"
+         aria-labelledby="media-modal--user-delete"
+         aria-modal="true"
+         role="dialog"
+    >
+        <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
+            <div class="modal-content relative w-full pointer-events-auto outline-none">
+                <div class="modal-body relative">
+                    <div class="screenshots-slider-modal">
+                        <img src="media/UserDelete/observer.png">
+                        <img src="media/UserDelete/github.png">
+                        <img src="media/UserDelete/api.png">
+                        <img src="media/UserDelete/hubspot.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+         id="media-modal--social"
+         tabindex="-1"
+         aria-labelledby="media-modal--social"
+         aria-modal="true"
+         role="dialog"
+    >
+        <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
+            <div class="modal-content relative w-full pointer-events-auto outline-none">
+                <div class="modal-body relative">
+                    <div class="screenshots-slider-modal">
+                        <video controls><source src="media/Social/SocialDemo.mp4" type="video/mp4"></video>
+                        <img src="media/Social/SocialLesson.png">
+                        <img src="media/Social/ApiRoutes.png">
+                        <img src="media/Social/PostCard.png">
+                        <img src="media/Social/UserCard.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+         id="media-modal--map"
+         tabindex="-1"
+         aria-labelledby="media-modal--map"
+         aria-modal="true"
+         role="dialog"
+    >
+        <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
+            <div class="modal-content relative w-full pointer-events-auto outline-none">
+                <div class="modal-body relative">
+                    <div class="screenshots-slider-modal">
+                        <video controls><source src="media/Map/MapDemo.mp4" type="video/mp4"></video>
+                        <img src="media/Map/mapSearch.png">
+                        <img src="media/Map/search.png">
+                        <img src="media/Map/setBoundingBox.png">
+                        <img src="media/Map/showSpot.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+         id="media-modal--delete"
+         tabindex="-1"
+         aria-labelledby="media-modal--delete"
+         aria-modal="true"
+         role="dialog"
+    >
+        <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
+            <div class="modal-content relative w-full pointer-events-auto outline-none">
+                <div class="modal-body relative">
+                    <div class="screenshots-slider-modal">
+                        <video controls><source src="media/Delete/DeleteDemo.mp4" type="video/mp4"></video>
+                        <img src="media/Delete/kernel.png">
+                        <img src="media/Delete/deleteCommand.png">
+                        <img src="media/Delete/deleteHandle.png">
+                        <img src="media/Delete/spot.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+         id="media-modal--fruit"
+         tabindex="-1"
+         aria-labelledby="media-modal--fruit"
+         aria-modal="true"
+         role="dialog"
+    >
+        <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
+            <div class="modal-content relative w-full pointer-events-auto outline-none">
+                <div class="modal-body relative">
+                    <div class="screenshots-slider-modal">
+                        <video controls><source src="media/Fruit/FruitDemo.mp4" type="video/mp4"></video>
+                        <img src="media/Fruit/play.png">
+                        <img src="media/Fruit/play1.png">
+                        <img src="media/Fruit/save.png">
+                        <img src="media/Fruit/save1.png">
+                        <img src="media/Fruit/save2.png">
+                        <img src="media/Fruit/save3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+         id="media-modal--nutella"
+         tabindex="-1"
+         aria-labelledby="media-modal--nutella"
+         aria-modal="true"
+         role="dialog"
+    >
+        <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
+            <div class="modal-content relative w-full pointer-events-auto outline-none">
+                <div class="modal-body relative">
+                    <div class="screenshots-slider-modal">
+                        <video controls><source src="media/Nutella/NutellaDemo.mp4" type="video/mp4"></video>
+                        <img src="media/Nutella/generation.png">
+                        <img src="media/Nutella/generation1.png">
+                        <img src="media/Nutella/generation2.png">
+                        <img src="media/Nutella/generation3.png">
+                        <img src="media/Nutella/generation4.png">
+                        <img src="media/Nutella/generation5.png">
+                        <img src="media/Nutella/generation6.png">
+                        <img src="media/Nutella/generation7.png">
+                        <img src="media/Nutella/generation8.png">
+                        <img src="media/Nutella/generation9.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modals -->
     <div class="flex justify-center items-center h-screen bg-black font-arcade">
         <div class="text-3xl font-bold mx-auto">
             <div class="max-w-7xl">
@@ -193,12 +370,12 @@
             <div class="project-card">
                 <div class="mt-0 bg-gray-600 lg:rounded-b-lg lg:shadow-xl border-b lg:border-none border-gray-600">
                     <div class="screenshots-slider">
-                        <a href="media/Stripe/StripeDemo.mp4"><img src="media/Stripe/StripeDemo.png"></a>
-                        <a href="media/Stripe/signUp.png"><img src="media/Stripe/signUp.png"></a>
-                        <a href="media/Stripe/signUpJS.png"><img src="media/Stripe/signUpJS.png"></a>
-                        <a href="media/Stripe/index.png"><img src="media/Stripe/index.png"></a>
-                        <a href="media/Stripe/register.png"><img src="media/Stripe/register.png"></a>
-                        <a href="media/Stripe/restart.png"><img src="media/Stripe/restart.png"></a>
+                        <img src="media/Stripe/StripeDemo.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--stripe">
+                        <img src="media/Stripe/signUp.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--stripe">
+                        <img src="media/Stripe/signUpJS.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--stripe">
+                        <img src="media/Stripe/index.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--stripe">
+                        <img src="media/Stripe/register.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--stripe">
+                        <img src="media/Stripe/restart.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--stripe">
                     </div>
                     <div class="p-4 md:p-6 pt-0 md:pt-0">
                         <div class="flex flex-wrap items-center mb-4">
@@ -242,9 +419,9 @@
             <div class="project-card">
                 <div class="mt-0 bg-gray-600 lg:rounded-b-lg lg:shadow-xl border-b lg:border-none border-gray-800">
                     <div class="screenshots-slider">
-                        <a href="media/GoogleSignIn/GoogleDemo.png"><img src="media/GoogleSignIn/GoogleDemo.png"></a>
-                        <a href="media/GoogleSignIn/login.png"><img src="media/GoogleSignIn/login.png"></a>
-                        <a href="media/GoogleSignIn/auth.png"><img src="media/GoogleSignIn/auth.png"></a>
+                        <img src="media/GoogleSignIn/GoogleDemo.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--google">
+                        <img src="media/GoogleSignIn/login.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--google">
+                        <img src="media/GoogleSignIn/auth.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--google">
                     </div>
                     <div class="p-4 md:p-6 pt-0 md:pt-0">
                         <div class="flex flex-wrap items-center mb-4">
@@ -281,10 +458,10 @@
             <div class="project-card">
                 <div class="mt-0 bg-gray-600 lg:rounded-b-lg lg:shadow-xl border-b lg:border-none border-gray-800">
                     <div class="screenshots-slider">
-                        <a href="media/UserDelete/observer.png"><img src="media/UserDelete/observer.png"></a>
-                        <a href="media/UserDelete/github.png"><img src="media/UserDelete/github.png"></a>
-                        <a href="media/UserDelete/api.png"><img src="media/UserDelete/api.png"></a>
-                        <a href="media/UserDelete/hubspot.png"><img src="media/UserDelete/hubspot.png"></a>
+                        <img src="media/UserDelete/observer.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--user-delete">
+                        <img src="media/UserDelete/github.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--user-delete">
+                        <img src="media/UserDelete/api.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--user-delete">
+                        <img src="media/UserDelete/hubspot.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--user-delete">
                     </div>
                     <div class="p-4 md:p-6 pt-0 md:pt-0">
                         <div class="flex flex-wrap items-center mb-4">
@@ -321,11 +498,11 @@
             <div class="project-card">
                 <div class="mt-0 bg-gray-600 lg:rounded-b-lg lg:shadow-xl border-b lg:border-none border-gray-800">
                     <div class="screenshots-slider">
-                        <a href="media/Social/SocialDemo.mp4"><img src="media/Social/SocialDemo.png"></a>
-                        <a href="media/Social/SocialLesson.png"><img src="media/Social/SocialLesson.png"></a>
-                        <a href="media/Social/ApiRoutes.png"><img src="media/Social/ApiRoutes.png"></a>
-                        <a href="media/Social/PostCard.png"><img src="media/Social/PostCard.png"></a>
-                        <a href="media/Social/UserCard.png"><img src="media/Social/UserCard.png"></a>
+                        <img src="media/Social/SocialDemo.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--social">
+                        <img src="media/Social/SocialLesson.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--social">
+                        <img src="media/Social/ApiRoutes.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--social">
+                        <img src="media/Social/PostCard.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--social">
+                        <img src="media/Social/UserCard.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--social">
                     </div>
                     <div class="p-4 md:p-6 pt-0 md:pt-0">
                         <div class="flex flex-wrap items-center mb-4">
@@ -383,11 +560,11 @@
             <div class="project-card">
                 <div class="mt-0 bg-gray-600 lg:rounded-b-lg lg:shadow-xl border-b lg:border-none border-gray-800">
                     <div class="screenshots-slider">
-                        <a href="media/Map/MapDemo.mp4"><img src="media/Map/MapDemo.png"></a>
-                        <a href="media/Map/mapSearch.png"><img src="media/Map/mapSearch.png"></a>
-                        <a href="media/Map/search.png"><img src="media/Map/search.png"></a>
-                        <a href="media/Map/setBoundingBox.png"><img src="media/Map/setBoundingBox.png"></a>
-                        <a href="media/Map/showSpot.png"><img src="media/Map/showSpot.png"></a>
+                        <img src="media/Map/MapDemo.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--map">
+                        <img src="media/Map/mapSearch.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--map">
+                        <img src="media/Map/search.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--map">
+                        <img src="media/Map/setBoundingBox.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--map">
+                        <img src="media/Map/showSpot.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--map">
                     </div>
                     <div class="p-4 md:p-6 pt-0 md:pt-0">
                         <div class="flex flex-wrap items-center mb-4">
@@ -436,11 +613,11 @@
             <div class="project-card">
                 <div class="mt-0 bg-gray-600 lg:rounded-b-lg lg:shadow-xl border-b lg:border-none border-gray-800">
                     <div class="screenshots-slider">
-                        <a href="media/Delete/DeleteDemo.mp4"><img src="media/Delete/DeleteDemo.png"></a>
-                        <a href="media/Delete/kernel.png"><img src="media/Delete/kernel.png"></a>
-                        <a href="media/Delete/deleteCommand.png"><img src="media/Delete/deleteCommand.png"></a>
-                        <a href="media/Delete/deleteHandle.png"><img src="media/Delete/deleteHandle.png"></a>
-                        <a href="media/Delete/spot.png"><img src="media/Delete/spot.png"></a>
+                        <img src="media/Delete/DeleteDemo.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--delete">
+                        <img src="media/Delete/kernel.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--delete">
+                        <img src="media/Delete/deleteCommand.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--delete">
+                        <img src="media/Delete/deleteHandle.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--delete">
+                        <img src="media/Delete/spot.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--delete">
                     </div>
                     <div class="p-4 md:p-6 pt-0 md:pt-0">
                         <div class="flex flex-wrap items-center mb-4">
@@ -477,13 +654,13 @@
             <div class="project-card">
                 <div class="mt-0 bg-gray-600 lg:rounded-b-lg lg:shadow-xl border-b lg:border-none border-gray-800">
                     <div class="screenshots-slider">
-                        <a href="media/Fruit/FruitDemo.mp4"><img src="media/Fruit/FruitDemo.png"></a>
-                        <a href="media/Fruit/play.png"><img src="media/Fruit/play.png"></a>
-                        <a href="media/Fruit/play1.png"><img src="media/Fruit/play1.png"></a>
-                        <a href="media/Fruit/save.png"><img src="media/Fruit/save.png"></a>
-                        <a href="media/Fruit/save1.png"><img src="media/Fruit/save1.png"></a>
-                        <a href="media/Fruit/save2.png"><img src="media/Fruit/save2.png"></a>
-                        <a href="media/Fruit/save3.png"><img src="media/Fruit/save3.png"></a>
+                        <img src="media/Fruit/FruitDemo.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--fruit">
+                        <img src="media/Fruit/play.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--fruit">
+                        <img src="media/Fruit/play1.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--fruit">
+                        <img src="media/Fruit/save.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--fruit">
+                        <img src="media/Fruit/save1.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--fruit">
+                        <img src="media/Fruit/save2.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--fruit">
+                        <img src="media/Fruit/save3.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--fruit">
                     </div>
                     <div class="p-4 md:p-6 pt-0 md:pt-0">
                         <div class="flex flex-wrap items-center mb-4">
@@ -528,17 +705,17 @@
             <div class="project-card">
                 <div class="mt-0 bg-gray-600 lg:rounded-b-lg lg:shadow-xl border-b lg:border-none border-gray-800">
                     <div class="screenshots-slider">
-                        <a href="media/Nutella/NutellaDemo.mp4"><img src="media/Nutella/NutellaDemo.png"></a>
-                        <a href="media/Nutella/generation.png"><img src="media/Nutella/generation.png"></a>
-                        <a href="media/Nutella/generation1.png"><img src="media/Nutella/generation1.png"></a>
-                        <a href="media/Nutella/generation2.png"><img src="media/Nutella/generation2.png"></a>
-                        <a href="media/Nutella/generation3.png"><img src="media/Nutella/generation3.png"></a>
-                        <a href="media/Nutella/generation4.png"><img src="media/Nutella/generation4.png"></a>
-                        <a href="media/Nutella/generation5.png"><img src="media/Nutella/generation5.png"></a>
-                        <a href="media/Nutella/generation6.png"><img src="media/Nutella/generation6.png"></a>
-                        <a href="media/Nutella/generation7.png"><img src="media/Nutella/generation7.png"></a>
-                        <a href="media/Nutella/generation8.png"><img src="media/Nutella/generation8.png"></a>
-                        <a href="media/Nutella/generation9.png"><img src="media/Nutella/generation9.png"></a>
+                        <img src="media/Nutella/NutellaDemo.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--nutella">
+                        <img src="media/Nutella/generation.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--nutella">
+                        <img src="media/Nutella/generation1.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--nutella">
+                        <img src="media/Nutella/generation2.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--nutella">
+                        <img src="media/Nutella/generation3.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--nutella">
+                        <img src="media/Nutella/generation4.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--nutella">
+                        <img src="media/Nutella/generation5.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--nutella">
+                        <img src="media/Nutella/generation6.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--nutella">
+                        <img src="media/Nutella/generation7.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--nutella">
+                        <img src="media/Nutella/generation8.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--nutella">
+                        <img src="media/Nutella/generation9.png" class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#media-modal--nutella">
                     </div>
                     <div class="p-4 md:p-6 pt-0 md:pt-0">
                         <div class="flex flex-wrap items-center mb-4">
@@ -592,23 +769,31 @@
     </div>
     <script>
         $(document).ready(function() {
+            // let $modalBody = $('.modal-body');
             $('.screenshots-slider').slick({
                 dots: true,
             });
+            $('.screenshots-slider-modal').slick({
+                dots: true,
+            })
             $('.view-details').click(function() {
                 let $description = $(this).siblings('.project-description');
                 $description.slideToggle();
                 $(this).slideToggle();
-            })
+            });
             $('.hide-details').click(function() {
                 let $description = $(this).parent();
                 $description.slideToggle();
                 $(this).parent().siblings('.view-details').slideToggle();
-            })
+            });
             $('.project-description').each(function() {
                 $(this).hide();
-            })
+            });
+            $('img').click(function() {
+                $('.screenshots-slider-modal').slick('refresh');
+            });
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 </html>
